@@ -1,49 +1,24 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from 'react';
-import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
+import styled from 'styled-components';
 
-import Header from './header';
-import './layout.css';
+import { HighlightsTitle, SkillsTitle, HobbiesTitle } from '../components/SectionTitle';
+import { string } from 'prop-types';
 
-const Layout = ({ children }) => {
-	const data = useStaticQuery(graphql`
-		query SiteTitleQuery {
-			site {
-				siteMetadata {
-					title
-				}
-			}
-		}
-	`);
+const Content = styled.div`flex: 1 0 auto;`;
+function Layout({ children, titleName }) {
+	const matchTitleName = (SkillsTitle) => SkillsTitle.titleName === titleName;
+	const headerData = SkillsTitle.find(matchTitleName);
 
 	return (
-		<div>
-			<Header siteTitle={data.site.siteMetadata.title} />
-
+		<Content>
+			<header />
 			<main>{children}</main>
-			<footer>
-				© 2020 | Coded by {` `}{' '}
-				<a target="_blank" href="https://www.linkedin.com/in/jenfbeltran/">
-					Jen Beltran
-				</a>, Designed by
-				{` `}
-				<a target="_blank" href="https://www.linkedin.com/in/nasom-ikoko/">
-					Nasom Ikoko
-				</a>
-			</footer>
-		</div>
+		</Content>
 	);
-};
+}
 
 Layout.propTypes = {
-	children : PropTypes.node.isRequired
+	pageName : string.isRequired
 };
 
 export default Layout;

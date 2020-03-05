@@ -52,9 +52,10 @@ const AboutMePhoto = styled.img`
 	@media (max-width: 849px) {
 		margin-top: 4rem;
 		padding-top: 4rem;
+		padding-bottom: 4rem;
 		margin-left: 0;
 		padding-left: 0;
-		width: 115%;
+		width: 100%;
 		height: auto;
 		transform: rotate(90deg);
 	}
