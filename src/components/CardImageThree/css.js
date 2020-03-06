@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const CardSection = styled.section`
 	@media (min-width: 850px) {
-		background-color: #f3f3f3;
 		position: relative;
 		display: flex;
 		margin-top: auto;
@@ -11,7 +10,6 @@ const CardSection = styled.section`
 
 	@media (max-width: 849px) {
 		margin: auto;
-		background-color: #f3f3f3;
 	}
 `;
 
@@ -22,7 +20,6 @@ const CardPhoto = styled.img`
 		position: relative;
 		display: flex;
 		margin: auto;
-		box-shadow: -10px 10px #e57f84;
 		border-radius: 5%;
 	}
 
@@ -36,8 +33,10 @@ const CardPhoto = styled.img`
 
 const Wrapper = styled.div`
 	@media (min-width: 850px) {
-		padding-left: 5rem;
+		margin-left: 7rem;
+		padding-left: 1rem;
 		padding-top: 1rem;
+		border-left: 5px solid #e57f84;
 	}
 
 	@media (max-width: 849px) {

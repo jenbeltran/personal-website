@@ -1,7 +1,7 @@
 import React from 'react';
 import { CardSection, CardPhotoMin, CardPhotoMax, Wrapper, EventName, Description } from './css.js';
 
-const CardImageTwo = (props) => {
+const CardImage = (props) => {
 	const { eventPhoto, eventAlt, eventName, eventDescription } = props;
 	return (
 		<CardSection>
@@ -15,4 +15,4 @@ const CardImageTwo = (props) => {
 	);
 };
 
-export default CardImageTwo;
+export default CardImage;

@@ -4,7 +4,7 @@ const TitleSection = styled.section`
 	text-align: center;
 	margin: auto;
 	padding: 1rem;
-	background-color: ${(titleName) => (titleName === 'Skills' ? '' : '#F3F3F3')};
+	background-color: ${({ pageName }) => (pageName !== 'buildingCommunity' && pageName !== 'skills' ? '' : '#f3f3f3')};
 `;
 
 const Headline = styled.p`
