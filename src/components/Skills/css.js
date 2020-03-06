@@ -2,17 +2,22 @@ import styled from 'styled-components';
 
 const SkillsSection = styled.section`
 	margin-top: auto;
-	padding: 2rem;
 	position: relative;
-`;
-
-const RowWrapper = styled.section`
 	display: flex;
 	text-align: center;
-	justify-content: space-evenly;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 0rem 3rem 3rem 3rem;
 `;
 
-const Wrapper = styled.div`padding: 1rem;`;
+const Wrapper = styled.div`
+	@media (min-width: 850px) {
+		padding: 1rem 3rem 0rem 3rem;
+	}
+	@media (max-width: 849px) {
+		padding: 1rem;
+	}
+`;
 
 const CodingLogo = styled.img`
 	height: 100px;
@@ -27,4 +32,4 @@ const CodingLanguage = styled.p`
 	font-size: 1.2rem;
 `;
 
-export { SkillsSection, RowWrapper, Wrapper, CodingLogo, CodingLanguage };
+export { SkillsSection, Wrapper, CodingLogo, CodingLanguage };
