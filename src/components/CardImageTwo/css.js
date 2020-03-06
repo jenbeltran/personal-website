@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { eventPhoto, eventAlt, eventName, eventDescription } from '../CardImage/data';
 
 const CardSection = styled.section`
 	@media (min-width: 850px) {

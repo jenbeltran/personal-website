@@ -5,10 +5,7 @@ import { HighlightsTitle, SkillsTitle, HobbiesTitle } from '../components/Sectio
 import { string } from 'prop-types';
 
 const Content = styled.div`flex: 1 0 auto;`;
-function Layout({ children, titleName }) {
-	const matchTitleName = (SkillsTitle) => SkillsTitle.titleName === titleName;
-	const headerData = SkillsTitle.find(matchTitleName);
-
+function Layout({ children }) {
 	return (
 		<Content>
 			<header />

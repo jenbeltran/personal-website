@@ -7,7 +7,6 @@ import AboutMe from '../components/AboutMe';
 
 //Section Titles
 import SectionTitle from '../components/SectionTitle';
-import { HighlightsTitle, SkillsTitle, HobbiesTitle } from '../components/SectionTitle/data';
 
 //Highlights Section
 import HighlightOne from '../components/CardImage';
@@ -23,7 +22,8 @@ const IndexPage = () => (
 	<div>
 		<SEO title="About Me" />
 		<AboutMe />
-		<SectionTitle title={HighlightsTitle.title} sentence={HighlightsTitle.sentence} />
+		<SectionTitle pageName="highlights" />
+
 		<HighlightOne
 			eventPhoto={Events[0].photo}
 			eventAlit={Events[0].alt}
@@ -48,9 +48,10 @@ const IndexPage = () => (
 			eventName={Events[3].eventName}
 			eventDescription={Events[3].eventDescription}
 		/>
-		<SectionTitle title={SkillsTitle.title} sentence={SkillsTitle.sentence} />
+		<SectionTitle pageName="skills" />
 		<Skills />
-		<SectionTitle title={HobbiesTitle.title} sentence={HobbiesTitle.sentence} />
+		<SectionTitle pageName="projects" />
+		<SectionTitle pageName="hobbies" />
 	</div>
 );
 
