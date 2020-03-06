@@ -1,15 +1,16 @@
 import React from 'react';
-import { CardSection, CardPhoto, Wrapper, EventName, Description } from './css.js';
+import { CardSection, CardPhotoMin, CardPhotoMax, Wrapper, EventName, Description } from './css.js';
 
 const CardImageTwo = (props) => {
 	const { eventPhoto, eventAlt, eventName, eventDescription } = props;
 	return (
 		<CardSection>
+			<CardPhotoMin src={eventPhoto} alt={eventAlt} />
 			<Wrapper>
 				<EventName>{eventName}</EventName>
 				<Description>{eventDescription}</Description>
 			</Wrapper>
-			<CardPhoto src={eventPhoto} alt={eventAlt} />
+			<CardPhotoMax src={eventPhoto} alt={eventAlt} />
 		</CardSection>
 	);
 };

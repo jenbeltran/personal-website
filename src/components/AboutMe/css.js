@@ -9,6 +9,7 @@ const AboutMeSection = styled.section`
 	}
 	@media (max-width: 849px) {
 		margin: auto;
+		padding-bottom: 6rem;
 	}
 `;
 
@@ -19,7 +20,7 @@ const Wrapper = styled.div`
 	}
 
 	@media (max-width: 849px) {
-		padding: 2rem;
+		padding: 2rem 2rem 5rem 2rem;
 	}
 `;
 
@@ -50,11 +51,6 @@ const AboutMePhoto = styled.img`
 		transform: rotate(90deg);
 	}
 	@media (max-width: 849px) {
-		margin-top: 4rem;
-		padding-top: 4rem;
-		padding-bottom: 4rem;
-		margin-left: 0;
-		padding-left: 0;
 		width: 100%;
 		height: auto;
 		transform: rotate(90deg);
