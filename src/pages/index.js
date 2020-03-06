@@ -21,6 +21,9 @@ import ProjectCardOne from '../components/CardImageThree';
 import ProjectCardTwo from '../components/CardImageFour';
 import Projects from '../components/CardImageThree/data';
 
+//Hobbies Image Gallery
+import HobbiesImages from '../components/ImageGallery';
+
 const IndexPage = () => (
 	<div>
 		<SEO title="About Me" />
@@ -71,8 +74,8 @@ const IndexPage = () => (
 			eventName={Events[3].eventName}
 			eventDescription={Events[3].eventDescription}
 		/>
-
 		<SectionTitle pageName="hobbies" />
+		<HobbiesImages />
 	</div>
 );
 
