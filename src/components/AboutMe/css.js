@@ -5,11 +5,11 @@ const AboutMeSection = styled.section`
 		position: relative;
 		display: flex;
 		margin: auto;
-		padding: 6rem;
+		padding: 7rem;
 	}
 	@media (max-width: 849px) {
 		margin: auto;
-		padding-bottom: 6rem;
+		padding-bottom: 7rem;
 	}
 `;
 
@@ -47,13 +47,16 @@ const Description = styled.p`
 const AboutMePhoto = styled.img`
 	@media (min-width: 850px) {
 		height: 400px;
-		padding: 2rem;
 		transform: rotate(90deg);
+		box-shadow: 10px -10px #e57f84;
+		border-radius: 5%;
 	}
 	@media (max-width: 849px) {
 		width: 100%;
 		height: auto;
 		transform: rotate(90deg);
+		box-shadow: 10px -10px #e57f84;
+		border-radius: 5%;
 	}
 `;
 

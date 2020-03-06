@@ -8,6 +8,7 @@ const SkillsSection = styled.section`
 	justify-content: space-around;
 	flex-wrap: wrap;
 	padding: 0rem 3rem 3rem 3rem;
+	background-color: #f3f3f3;
 `;
 
 const Wrapper = styled.div`

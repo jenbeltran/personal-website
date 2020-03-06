@@ -1,7 +1,7 @@
 const Title = [
 	{
-		pageName : 'highlights',
-		title    : 'Highlights',
+		pageName : 'buildingCommunity',
+		title    : 'Building Community',
 		sentence : '“If you want to go quickly, go alone. If you want to go far, go together.”'
 	},
 
