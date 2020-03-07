@@ -13,24 +13,21 @@ function ImageGallery() {
 		<section>
 			<Grid>
 				<PicOne>
-					<Img src={practice} alt="Picture of Ruiting at an event" />
+					<Img src={practice} alt="Picture of Jen at dance practice" />
 				</PicOne>
 
 				<PicTwo>
-					<Img src={recital} alt="The Tech Teahouse group at a Hackathon" />
+					<Img src={recital} alt="Picture of Jen at dance recital" />
 				</PicTwo>
 
 				<PicThree>
-					<Img src={salad} alt="A picture of Jen and Ruiting smiling at the Hackathon" />
+					<Img src={salad} alt="A picture of a salad" />
 				</PicThree>
 				<PicFour>
-					<Img src={dessert} alt="Jen, Ruiting and company on the Elevate stage posing for the camera." />
+					<Img src={dessert} alt="Picture of dessert" />
 				</PicFour>
 				<PicFive>
-					<Img
-						src={vacation}
-						alt="Some  of the tech and tea group sitting on a table together smiling for the camera."
-					/>
+					<Img src={vacation} alt="Picture of Jen on vacation" />
 				</PicFive>
 			</Grid>
 		</section>
