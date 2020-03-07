@@ -24,6 +24,9 @@ import Projects from '../components/CardImageThree/data';
 //Hobbies Image Gallery
 import HobbiesImages from '../components/ImageGallery';
 
+//Footer
+import Footer from '../components/Footer';
+
 const IndexPage = () => (
 	<div>
 		<SEO title="About Me" />
@@ -76,6 +79,7 @@ const IndexPage = () => (
 		/>
 		<SectionTitle pageName="hobbies" />
 		<HobbiesImages />
+		<Footer />
 	</div>
 );
 
