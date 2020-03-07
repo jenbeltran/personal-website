@@ -4,6 +4,7 @@ import TechJam from '../../images/tech-jam.png';
 
 const Projects = [
 	{
+		website          : 'https://www.techteahouse.com/',
 		photo            : TechTeahouse,
 		alt              : 'Tech Teahouse website image',
 		eventName        : 'Tech Teahouse Website - January 2020',
@@ -11,6 +12,7 @@ const Projects = [
 			'Managed and worked with a team of designers and developers to build and deploy Tech Teahouse website based on co-founders’ business requirements.'
 	},
 	{
+		website          : 'https://github.com/jenbeltran/2tr-now',
 		photo            : YorkCapstone,
 		alt              : 'YorkU capstone project image',
 		eventName        : 'YorkU Capstone Project  - November 2019',
@@ -18,6 +20,7 @@ const Projects = [
 			'Built a web application in partners that connects students and tutors for tutoring sessions. Students can send ticket requests for tutoring sessions and tutors have the option to accept it.'
 	},
 	{
+		website          : 'https://github.com/jenbeltran/tech-jam-hackathon',
 		photo            : TechJam,
 		alt              : 'Tech Jam hackathon project image',
 		eventName        : 'Elevate Tech Jam - September 2019',

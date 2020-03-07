@@ -45,18 +45,21 @@ const IndexPage = () => (
 			eventAlit={Projects[0].alt}
 			eventName={Projects[0].eventName}
 			eventDescription={Projects[0].eventDescription}
+			website={Projects[0].website}
 		/>
 		<ProjectCardTwo
 			eventPhoto={Projects[1].photo}
 			eventAlit={Projects[1].alt}
 			eventName={Projects[1].eventName}
 			eventDescription={Projects[1].eventDescription}
+			website={Projects[1].website}
 		/>
 		<ProjectCardOne
 			eventPhoto={Projects[2].photo}
 			eventAlit={Projects[2].alt}
 			eventName={Projects[2].eventName}
 			eventDescription={Projects[2].eventDescription}
+			website={Projects[2].website}
 		/>
 		<SectionTitle pageName="buildingCommunity" />
 		<EventCardOne
