@@ -18,7 +18,6 @@ export const Grid = styled.ul`
 
 export const Img = styled.img`
 	object-fit: cover;
-	border-radius: 5%;
 	max-height: 75vw;
 	width: 100%;
 
@@ -34,6 +33,7 @@ export const Img = styled.img`
 		width: 100%;
 		height: 100%;
 		max-height: auto;
+		border-radius: 5%;
 	}
 `;
 
