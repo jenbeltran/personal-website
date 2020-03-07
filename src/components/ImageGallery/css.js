@@ -60,14 +60,14 @@ export const PicThree = styled.li`
 	}
 `;
 
-export const PicSix = styled.li`
+export const PicFour = styled.li`
 	@media screen and (min-width: 850px) {
 		grid-row: 6/-1;
 		grid-column: 5/10;
 		padding: 0.5rem;
 	}
 `;
-export const PicSeven = styled.li`
+export const PicFive = styled.li`
 	@media screen and (min-width: 850px) {
 		grid-column: 8/10;
 		grid-row: 1/6;

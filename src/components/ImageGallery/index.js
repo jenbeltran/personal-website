@@ -6,7 +6,7 @@ import salad from '../../images/salad.png';
 import practice from '../../images/practice.png';
 import recital from '../../images/recital.png';
 
-import { Grid, PicOne, PicTwo, PicThree, PicSix, PicSeven, Img } from './css';
+import { Grid, PicOne, PicTwo, PicThree, PicFour, PicFive, Img } from './css';
 
 function ImageGallery() {
 	return (
@@ -23,15 +23,15 @@ function ImageGallery() {
 				<PicThree>
 					<Img src={salad} alt="A picture of Jen and Ruiting smiling at the Hackathon" />
 				</PicThree>
-				<PicSix>
+				<PicFour>
 					<Img src={dessert} alt="Jen, Ruiting and company on the Elevate stage posing for the camera." />
-				</PicSix>
-				<PicSeven>
+				</PicFour>
+				<PicFive>
 					<Img
 						src={vacation}
 						alt="Some  of the tech and tea group sitting on a table together smiling for the camera."
 					/>
-				</PicSeven>
+				</PicFive>
 			</Grid>
 		</section>
 	);
