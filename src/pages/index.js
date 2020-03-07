@@ -3,9 +3,6 @@ import React from 'react';
 // import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-//gatsby smooth scroll plugin
-import scrollTo from 'gatsby-plugin-smoothscroll';
-
 //Navbar
 import Nav from '../components/Nav';
 

@@ -8,7 +8,7 @@ import { FooterSection, Headline, ContactInfo, SocialIconList, SocialIcon } from
 
 const Footer = () => {
 	return (
-		<FooterSection id="footer">
+		<FooterSection id="contact">
 			<div>
 				<Headline>Contact Information</Headline>
 				<ContactInfo>FrancescaJenBeltran@gmail.com</ContactInfo>
