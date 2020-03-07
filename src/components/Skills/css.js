@@ -1,4 +1,9 @@
 import styled from 'styled-components';
+import { breakpoints } from '../../theme/breakpoints';
+import { colors } from '../../theme/colors';
+
+const { tablet, overTablet } = breakpoints;
+const { grey } = colors;
 
 const SkillsSection = styled.section`
 	margin-top: auto;
@@ -8,14 +13,14 @@ const SkillsSection = styled.section`
 	justify-content: space-around;
 	flex-wrap: wrap;
 	padding: 0rem 3rem 3rem 3rem;
-	background-color: #f3f3f3;
+	background-color: ${grey};
 `;
 
 const Wrapper = styled.div`
-	@media (min-width: 850px) {
+	@media (min-width: ${overTablet}px) {
 		padding: 1rem 3rem 0rem 3rem;
 	}
-	@media (max-width: 849px) {
+	@media (max-width: ${tablet}px) {
 		padding: 1rem;
 	}
 `;

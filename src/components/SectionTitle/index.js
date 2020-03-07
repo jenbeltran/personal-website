@@ -9,7 +9,7 @@ const SectionTitle = (props) => {
 	const { pageName, title, sentence } = titleData;
 
 	return (
-		<TitleSection pageName={pageName}>
+		<TitleSection pageName={pageName} id={pageName}>
 			<Headline>{title}</Headline>
 			<Description>{sentence}</Description>
 		</TitleSection>

@@ -1,32 +1,37 @@
 import styled from 'styled-components';
+import { breakpoints } from '../../theme/breakpoints';
+import { colors } from '../../theme/colors';
+
+const { tablet, overTablet } = breakpoints;
+const { pink, grey } = colors;
 
 const CardSection = styled.section`
-	@media (min-width: 850px) {
-		background-color: #f3f3f3;
+	@media (min-width: ${overTablet}px) {
+		background-color: ${grey};
 		position: relative;
 		display: flex;
 		margin-top: auto;
 		padding: 2rem 5rem 3rem 5rem;
 	}
 
-	@media (max-width: 849px) {
+	@media (max-width: ${tablet}px) {
 		margin: auto;
-		background-color: #f3f3f3;
+		background-color: ${grey};
 	}
 `;
 
 const CardPhoto = styled.img`
-	@media (min-width: 850px) {
+	@media (min-width: ${overTablet}px) {
 		height: 300px;
 		width: 475px;
 		position: relative;
 		display: flex;
 		margin: auto;
-		box-shadow: -10px 10px #e57f84;
+		box-shadow: -10px 10px ${pink};
 		border-radius: 5%;
 	}
 
-	@media (max-width: 849px) {
+	@media (max-width: ${tablet}px) {
 		height: 100%;
 		width: 100%;
 		margin: auto;
@@ -35,28 +40,16 @@ const CardPhoto = styled.img`
 `;
 
 const Wrapper = styled.div`
-	@media (min-width: 850px) {
+	@media (min-width: ${overTablet}px) {
 		padding-left: 5rem;
 		padding-top: 1rem;
 	}
 
-	@media (max-width: 849px) {
+	@media (max-width: ${tablet}px) {
 		margin: auto;
 		padding: 2rem;
 		text-align: center;
 	}
 `;
 
-const EventName = styled.p`
-	font-family: lato;
-	font-size: 1.5rem;
-	font-weight: 500;
-	color: #23286b;
-`;
-
-const Description = styled.p`
-	font-family: lato;
-	font-size: 1.2rem;
-	line-height: 30px;
-`;
-export { CardSection, CardPhoto, Wrapper, EventName, Description };
+export { CardSection, CardPhoto, Wrapper };

@@ -3,6 +3,10 @@ import React from 'react';
 // import Layout from '../components/layout';
 import SEO from '../components/seo';
 
+//Navbar
+import Nav from '../components/Nav';
+
+//About Me Section
 import AboutMe from '../components/AboutMe';
 
 //Section Titles
@@ -30,9 +34,11 @@ import Footer from '../components/Footer';
 const IndexPage = () => (
 	<div>
 		<SEO title="About Me" />
+		<Nav />
 		<AboutMe />
-		<SectionTitle pageName="skills" />
+		<SectionTitle pageName="skills" id="skills" />
 		<Skills />
+
 		<SectionTitle pageName="projects" />
 		<ProjectCardOne
 			eventPhoto={Projects[0].photo}
