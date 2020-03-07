@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+import { colors } from '../../theme/colors';
+
+const { indigo } = colors;
 
 const TitleSection = styled.section`
 	text-align: center;
@@ -11,7 +14,7 @@ const Headline = styled.p`
 	font-family: lato;
 	font-size: 2rem;
 	font-weight: 500;
-	color: #23286b;
+	color: ${indigo};
 `;
 
 const Description = styled.p`

@@ -1,5 +1,6 @@
 import React from 'react';
-import { CardSection, CardPhoto, Wrapper, EventName, Description } from './css.js';
+import { CardSection, CardPhoto, Wrapper } from './css.js';
+import { ParagraphTitle, ParagraphDescription } from '../../theme/typography';
 
 const CardImage = (props) => {
 	const { eventPhoto, eventAlt, eventName, eventDescription } = props;
@@ -7,8 +8,8 @@ const CardImage = (props) => {
 		<CardSection>
 			<CardPhoto src={eventPhoto} alt={eventAlt} />
 			<Wrapper>
-				<EventName>{eventName}</EventName>
-				<Description>{eventDescription}</Description>
+				<ParagraphTitle>{eventName}</ParagraphTitle>
+				<ParagraphDescription>{eventDescription}</ParagraphDescription>
 			</Wrapper>
 		</CardSection>
 	);

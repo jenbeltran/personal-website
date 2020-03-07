@@ -1,4 +1,9 @@
 import styled from 'styled-components';
+import { breakpoints } from '../../theme/breakpoints';
+import { colors } from '../../theme/colors';
+
+const { tablet, overTablet } = breakpoints;
+const { pink, white } = colors;
 
 export const StyleNav = styled.section`
 	justify-content: center;
@@ -9,7 +14,7 @@ export const StyleNav = styled.section`
 	height: 0px;
 	position: fixed;
 
-	@media screen and (min-width: 879px) {
+	@media screen and (min-width: ${overTablet}px) {
 		display: block;
 
 		display: flex;
@@ -31,7 +36,7 @@ export const StyledNavBrand = styled.div`
 
 	margin-bottom: 2rem;
 
-	@media screen and (min-width: 879px) {
+	@media screen and (min-width: ${overTablet}px) {
 		margin-right: auto;
 		margin-bottom: 0;
 	}
@@ -40,7 +45,7 @@ export const StyledNavBrand = styled.div`
 		width: auto;
 		display: block;
 		height: 32px;
-		@media screen and (min-width: 879px) {
+		@media screen and (min-width: ${overTablet}px) {
 			height: 30px;
 		}
 	}
@@ -53,7 +58,7 @@ export const StyleNavLinks = styled.ul`
 	flex-direction: column;
 	padding: 0;
 
-	@media screen and (min-width: 879px) {
+	@media screen and (min-width: ${overTablet}px) {
 		align-items: center;
 		margin: 0;
 		flex-direction: row;
@@ -65,7 +70,7 @@ export const NavListItem = styled.li`
 	font-size: 2rem;
 	margin-bottom: 2rem;
 
-	@media screen and (min-width: 879px) {
+	@media screen and (min-width: ${overTablet}px) {
 		padding: 0;
 		margin-right: 55px;
 		font-size: 1.1rem;
@@ -80,7 +85,7 @@ export const CheckboxLabel = styled.label`
 	height: 60px;
 	width: 60px;
 	border-radius: 50%;
-	background-color: #e57f84;
+	background-color: ${pink};
 
 	display: flex;
 
@@ -90,7 +95,7 @@ export const CheckboxLabel = styled.label`
 	z-index: 10;
 	pointer: cursor;
 
-	@media screen and (min-width: 879px) {
+	@media screen and (min-width: ${overTablet}px) {
 		display: none;
 	}
 `;
@@ -108,7 +113,7 @@ export const CheckboxInput = styled.input`
     right: 0;
     left: 0;
     bottom: 0;
-    background: white;
+    background: ${white};
     z-index: 9;
 
     opacity: 0.85;
@@ -121,14 +126,14 @@ export const MobileNavIcon = styled.span`
   width: 30px;
   
   display: block;
-  background: white;
+  background: ${white};
   margin: auto;
   position: relative;
 
   &::before, &::after {
     content: "";
     display: block;
-    background: white
+    background: ${white}
     width: 30px;
     height: 2px;
     position: absolute;
@@ -144,25 +149,25 @@ export const MobileNavIcon = styled.span`
 `;
 
 export const NavSection = styled.section`
-	@media (min-width: 850px) {
+	@media (min-width: ${overTablet}px) {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
 		padding: 0rem 3rem 0rem 3rem;
 	}
-	@media (max-width: 849px) {
+	@media (max-width: ${tablet}px) {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		padding: 2rem;
 		text-align: center;
-		background-color: #e57f84;
+		background-color: ${pink};
 	}
 `;
 
 export const Wrapper = styled.div`
-	@media (min-width: 850px) {
+	@media (min-width: ${overTablet}px) {
 		display: flex;
 		justify-content: flex-end;
 	}
@@ -171,33 +176,33 @@ export const Wrapper = styled.div`
 export const Anchor = styled.a`text-decoration: none;`;
 
 export const Headline = styled.p`
-	@media (min-width: 850px) {
+	@media (min-width: ${overTablet}px) {
 		font-family: lato;
 		font-size: 2rem;
 		font-weight: 800;
-		color: #e57f84;
+		color: ${pink};
 		padding-left: 3rem;
 	}
-	@media (max-width: 849px) {
+	@media (max-width: ${tablet}px) {
 		font-family: lato;
 		font-size: 2rem;
 		font-weight: 800;
-		color: #e57f84;
+		color: ${pink};
 	}
 `;
 
 export const Tab = styled.p`
-	@media (min-width: 850px) {
+	@media (min-width: ${overTablet}px) {
 		font-family: lato;
 		font-size: 1.2rem;
 		padding: 0rem 1rem 0rem 1rem;
 		color: black;
 	}
-	@media (max-width: 849px) {
+	@media (max-width: ${tablet}px) {
 		font-family: lato;
 		font-size: 1.6rem;
 		font-weight: 500;
-		color: #e57f84;
+		color: ${pink};
 		margin: 0;
 		padding: 0;
 	}
