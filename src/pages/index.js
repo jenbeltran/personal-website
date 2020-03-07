@@ -3,6 +3,9 @@ import React from 'react';
 // import Layout from '../components/layout';
 import SEO from '../components/seo';
 
+//gatsby smooth scroll plugin
+import scrollTo from 'gatsby-plugin-smoothscroll';
+
 //Navbar
 import Nav from '../components/Nav';
 
@@ -36,8 +39,9 @@ const IndexPage = () => (
 		<SEO title="About Me" />
 		<Nav />
 		<AboutMe />
-		<SectionTitle pageName="skills" />
+		<SectionTitle pageName="skills" id="skills" />
 		<Skills />
+
 		<SectionTitle pageName="projects" />
 		<ProjectCardOne
 			eventPhoto={Projects[0].photo}
