@@ -15,7 +15,7 @@ const AboutMeSection = styled.section`
 	}
 	@media (max-width: ${tablet}px) {
 		margin: auto;
-		padding-bottom: 7rem;
+		padding-bottom: 10rem;
 	}
 `;
 
@@ -26,7 +26,7 @@ const Wrapper = styled.div`
 	}
 
 	@media (max-width: ${tablet}px) {
-		padding: 2rem 2rem 5rem 2rem;
+		padding: 2rem 2rem 6rem 2rem;
 	}
 `;
 
