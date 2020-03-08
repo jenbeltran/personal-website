@@ -6,8 +6,8 @@ const CardImage = (props) => {
 	const { eventPhoto, eventAlt, eventName, eventDescription, website } = props;
 	return (
 		<CardSection>
+			<CardPhoto src={eventPhoto} alt={eventAlt} />
 			<SectionWrapper>
-				<CardPhoto src={eventPhoto} alt={eventAlt} />
 				<Wrapper>
 					<ParagraphTitle>{eventName}</ParagraphTitle>
 					<ParagraphDescription>{eventDescription}</ParagraphDescription>

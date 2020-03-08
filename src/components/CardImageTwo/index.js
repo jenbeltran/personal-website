@@ -6,14 +6,14 @@ const CardImageTwo = (props) => {
 	const { eventPhoto, eventAlt, eventName, eventDescription } = props;
 	return (
 		<CardSection>
+			<CardPhotoMin src={eventPhoto} alt={eventAlt} />
 			<SectionWrapper>
-				<CardPhotoMin src={eventPhoto} alt={eventAlt} />
 				<Wrapper>
 					<ParagraphTitle>{eventName}</ParagraphTitle>
 					<ParagraphDescription>{eventDescription}</ParagraphDescription>
 				</Wrapper>
-				<CardPhotoMax src={eventPhoto} alt={eventAlt} />
 			</SectionWrapper>
+			<CardPhotoMax src={eventPhoto} alt={eventAlt} />
 		</CardSection>
 	);
 };
