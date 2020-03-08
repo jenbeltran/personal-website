@@ -3,6 +3,8 @@ import { colors } from './colors';
 
 const { pink, indigo, white } = colors;
 
+export const SectionWrapper = styled.div`margin: auto;`;
+
 export const ParagraphTitle = styled.p`
 	font-family: lato;
 	font-size: 1.5rem;

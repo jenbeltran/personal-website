@@ -43,6 +43,7 @@ const Wrapper = styled.div`
 	@media (min-width: ${overTablet}px) {
 		padding-left: 5rem;
 		padding-top: 1rem;
+		margin: auto;
 	}
 
 	@media (max-width: ${tablet}px) {

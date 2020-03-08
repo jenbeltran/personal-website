@@ -3,7 +3,7 @@ import { breakpoints } from '../../theme/breakpoints';
 import { colors } from '../../theme/colors';
 
 const { tablet, overTablet } = breakpoints;
-const { pink, white } = colors;
+const { pink, indigo, black, white } = colors;
 
 export const StyleNav = styled.section`
 	justify-content: center;
@@ -196,13 +196,13 @@ export const Tab = styled.p`
 		font-family: lato;
 		font-size: 1.2rem;
 		padding: 0rem 1rem 0rem 1rem;
-		color: black;
+		color: ${black};
 	}
 	@media (max-width: ${tablet}px) {
 		font-family: lato;
 		font-size: 1.6rem;
 		font-weight: 500;
-		color: ${pink};
+		color: ${indigo};
 		margin: 0;
 		padding: 0;
 	}
