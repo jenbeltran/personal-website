@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { breakpoints } from '../../theme/breakpoints';
-const { overTablet } = breakpoints;
+const { laptop } = breakpoints;
 
 export const Grid = styled.ul`
 	margin: 0;
@@ -9,7 +9,7 @@ export const Grid = styled.ul`
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;
 
-	@media screen and (min-width: ${overTablet}px) {
+	@media screen and (min-width: ${laptop}px) {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-rows: repeat(10, 5vw);
@@ -31,7 +31,7 @@ export const Img = styled.img`
 		object-position: center center;
 	}
 
-	@media screen and (min-width: ${overTablet}px) {
+	@media screen and (min-width: ${laptop}px) {
 		width: 100%;
 		height: 100%;
 		max-height: auto;
@@ -40,21 +40,21 @@ export const Img = styled.img`
 `;
 
 export const PicOne = styled.li`
-	@media screen and (min-width: ${overTablet}px) {
+	@media screen and (min-width: ${laptop}px) {
 		grid-row: 1/12;
 		grid-column: 10/-1;
 		padding: 0.5rem;
 	}
 `;
 export const PicTwo = styled.li`
-	@media screen and (min-width: ${overTablet}px) {
+	@media screen and (min-width: ${laptop}px) {
 		grid-row: 1/12;
 		grid-column: 1/5;
 		padding: 0.5rem;
 	}
 `;
 export const PicThree = styled.li`
-	@media screen and (min-width: ${overTablet}px) {
+	@media screen and (min-width: ${laptop}px) {
 		grid-column: 5/8;
 		grid-row: 1/6;
 		display: block;
@@ -63,14 +63,14 @@ export const PicThree = styled.li`
 `;
 
 export const PicFour = styled.li`
-	@media screen and (min-width: ${overTablet}px) {
+	@media screen and (min-width: ${laptop}px) {
 		grid-row: 6/-1;
 		grid-column: 5/10;
 		padding: 0.5rem;
 	}
 `;
 export const PicFive = styled.li`
-	@media screen and (min-width: ${overTablet}px) {
+	@media screen and (min-width: ${laptop}px) {
 		grid-column: 8/10;
 		grid-row: 1/6;
 		padding: 0.5rem;

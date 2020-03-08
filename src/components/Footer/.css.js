@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import { breakpoints } from '../../theme/breakpoints';
 import { colors } from '../../theme/colors';
 
-const { tablet, overTablet } = breakpoints;
+const { tablet, laptop } = breakpoints;
 const { pink } = colors;
 
 const FooterSection = styled.section`
-	@media (min-width: ${overTablet}px) {
+	@media (min-width: ${laptop}px) {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -25,7 +25,7 @@ const FooterSection = styled.section`
 `;
 
 const Headline = styled.p`
-	@media (min-width: ${overTablet}px) {
+	@media (min-width: ${laptop}px) {
 		font-family: lato;
 		font-size: 1.3rem;
 		font-weight: 500;
@@ -43,7 +43,7 @@ const ContactInfo = styled.p`
 `;
 
 const SocialIconList = styled.div`
-	@media (min-width: ${overTablet}px) {
+	@media (min-width: ${laptop}px) {
 		display: flex;
 		justify-content: flex-end;
 	}

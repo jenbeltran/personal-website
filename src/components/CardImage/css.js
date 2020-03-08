@@ -2,15 +2,23 @@ import styled from 'styled-components';
 import { breakpoints } from '../../theme/breakpoints';
 import { colors } from '../../theme/colors';
 
-const { tablet, overTablet } = breakpoints;
+const { tablet, laptop, desktop } = breakpoints;
 const { pink, grey } = colors;
 
 const CardSection = styled.section`
-	@media (min-width: ${overTablet}px) {
+	@media (min-width: ${desktop}px) {
 		background-color: ${grey};
 		position: relative;
 		display: flex;
-		margin-top: auto;
+		margin: auto;
+		padding: 7rem 20% 7rem 20%;
+	}
+
+	@media (min-width: ${laptop}px) and (max-width: 2879px) {
+		background-color: ${grey};
+		position: relative;
+		display: flex;
+		margin: auto;
 		padding: 2rem 5rem 3rem 5rem;
 	}
 
@@ -21,7 +29,16 @@ const CardSection = styled.section`
 `;
 
 const CardPhoto = styled.img`
-	@media (min-width: ${overTablet}px) {
+	@media (min-width: ${desktop}px) {
+		height: 400px;
+		width: 575px;
+		position: relative;
+		display: flex;
+		margin: auto;
+		box-shadow: -10px 10px ${pink};
+		border-radius: 5%;
+	}
+	@media (min-width: ${laptop}px) and (max-width: 2879px) {
 		height: 300px;
 		width: 475px;
 		position: relative;
@@ -40,7 +57,7 @@ const CardPhoto = styled.img`
 `;
 
 const Wrapper = styled.div`
-	@media (min-width: ${overTablet}px) {
+	@media (min-width: ${laptop}px) {
 		padding-left: 5rem;
 		padding-top: 1rem;
 		margin: auto;

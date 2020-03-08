@@ -5,9 +5,9 @@ import { SectionWrapper, ParagraphTitle, ParagraphDescription, Anchor, Button } 
 const CardImage = (props) => {
 	const { eventPhoto, eventAlt, eventName, eventDescription, website } = props;
 	return (
-		<CardSection>
-			<CardPhoto src={eventPhoto} alt={eventAlt} />
-			<SectionWrapper>
+		<SectionWrapper>
+			<CardSection>
+				<CardPhoto src={eventPhoto} alt={eventAlt} />
 				<Wrapper>
 					<ParagraphTitle>{eventName}</ParagraphTitle>
 					<ParagraphDescription>{eventDescription}</ParagraphDescription>
@@ -15,8 +15,8 @@ const CardImage = (props) => {
 						<Button>See More</Button>
 					</Anchor>
 				</Wrapper>
-			</SectionWrapper>
-		</CardSection>
+			</CardSection>
+		</SectionWrapper>
 	);
 };
 

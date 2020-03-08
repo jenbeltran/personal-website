@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { breakpoints } from '../../theme/breakpoints';
 import { colors } from '../../theme/colors';
 
-const { tablet, overTablet } = breakpoints;
+const { tablet, laptop } = breakpoints;
 const { grey } = colors;
 
 const SkillsSection = styled.section`
@@ -17,7 +17,7 @@ const SkillsSection = styled.section`
 `;
 
 const Wrapper = styled.div`
-	@media (min-width: ${overTablet}px) {
+	@media (min-width: ${laptop}px) {
 		padding: 1rem 3rem 0rem 3rem;
 	}
 	@media (max-width: ${tablet}px) {

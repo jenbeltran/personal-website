@@ -2,12 +2,18 @@ import styled from 'styled-components';
 import { breakpoints } from '../../theme/breakpoints';
 import { colors } from '../../theme/colors';
 
-const { tablet, overTablet } = breakpoints;
+const { tablet, laptop, desktop } = breakpoints;
 
 const { pink } = colors;
 
 const AboutMeSection = styled.section`
-	@media (min-width: ${overTablet}px) {
+	@media (min-width: ${desktop}px) {
+		position: relative;
+		display: flex;
+		margin: auto;
+		padding: 7rem 20% 7rem 20%;
+	}
+	@media (min-width: ${laptop}px) and (max-width: 2879px) {
 		position: relative;
 		display: flex;
 		margin: auto;
@@ -20,7 +26,7 @@ const AboutMeSection = styled.section`
 `;
 
 const Wrapper = styled.div`
-	@media (min-width: ${overTablet}px) {
+	@media (min-width: ${laptop}px) {
 		padding-left: 2rem;
 		border-left: 5px solid ${pink};
 	}
@@ -31,7 +37,7 @@ const Wrapper = styled.div`
 `;
 
 const Headline = styled.p`
-	@media (min-width: ${overTablet}px) {
+	@media (min-width: ${laptop}px) {
 		font-family: lato;
 		font-size: 2rem;
 		font-weight: 500;
@@ -51,7 +57,13 @@ const Description = styled.p`
 `;
 
 const AboutMePhoto = styled.img`
-	@media (min-width: ${overTablet}px) {
+	@media (min-width: ${desktop}px) {
+		height: 500px;
+		transform: rotate(90deg);
+		box-shadow: 10px -10px ${pink};
+		border-radius: 5%;
+	}
+	@media (min-width: ${laptop}px) and (max-width: 2879px) {
 		height: 400px;
 		transform: rotate(90deg);
 		box-shadow: 10px -10px ${pink};
