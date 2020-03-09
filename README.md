@@ -8,7 +8,9 @@ This is a simple front-end website to showcase my personal accomplishments.
 Tools used: GatsbyJS, Styled Components
 
 
-#To Open
+<h1>
+To Open
+</h1>
 
 `npm install`
 
