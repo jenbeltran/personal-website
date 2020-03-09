@@ -11,7 +11,7 @@ const CardSection = styled.section`
 		position: relative;
 		display: flex;
 		margin: auto;
-		padding: 7rem 20% 7rem 20%;
+		padding: 5rem 17% 5rem 17%;
 	}
 
 	@media (min-width: ${laptop}px) and (max-width: ${desktop}px) {

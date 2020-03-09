@@ -11,7 +11,7 @@ const AboutMeSection = styled.section`
 		position: relative;
 		display: flex;
 		margin: auto;
-		padding: 7rem 20% 7rem 20%;
+		padding: 7rem 15% 7rem 15%;
 	}
 	@media (min-width: ${laptop}px) and (max-width: ${desktop}px) {
 		position: relative;
