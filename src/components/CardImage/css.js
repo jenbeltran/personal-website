@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import { breakpoints } from '../../theme/breakpoints';
 import { colors } from '../../theme/colors';
 
-const { tablet, laptop, desktop } = breakpoints;
+const { tablet, laptop, desktop, largeDesktop } = breakpoints;
 const { pink, grey } = colors;
 
 const CardSection = styled.section`
-	@media (min-width: ${desktop}px) {
+	@media (min-width: ${largeDesktop}px) {
 		background-color: ${grey};
 		position: relative;
 		display: flex;
@@ -14,7 +14,7 @@ const CardSection = styled.section`
 		padding: 7rem 20% 7rem 20%;
 	}
 
-	@media (min-width: ${laptop}px) and (max-width: 2879px) {
+	@media (min-width: ${laptop}px) and (max-width: ${desktop}px) {
 		background-color: ${grey};
 		position: relative;
 		display: flex;
@@ -29,7 +29,7 @@ const CardSection = styled.section`
 `;
 
 const CardPhoto = styled.img`
-	@media (min-width: ${desktop}px) {
+	@media (min-width: ${largeDesktop}px) {
 		height: 400px;
 		width: 575px;
 		position: relative;
@@ -38,7 +38,7 @@ const CardPhoto = styled.img`
 		box-shadow: -10px 10px ${pink};
 		border-radius: 5%;
 	}
-	@media (min-width: ${laptop}px) and (max-width: 2879px) {
+	@media (min-width: ${laptop}px) and (max-width: ${desktop}px) {
 		height: 300px;
 		width: 475px;
 		position: relative;

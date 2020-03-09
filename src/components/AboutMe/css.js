@@ -2,18 +2,18 @@ import styled from 'styled-components';
 import { breakpoints } from '../../theme/breakpoints';
 import { colors } from '../../theme/colors';
 
-const { tablet, laptop, desktop } = breakpoints;
+const { tablet, laptop, desktop, largeDesktop } = breakpoints;
 
 const { pink } = colors;
 
 const AboutMeSection = styled.section`
-	@media (min-width: ${desktop}px) {
+	@media (min-width: ${largeDesktop}px) {
 		position: relative;
 		display: flex;
 		margin: auto;
 		padding: 7rem 20% 7rem 20%;
 	}
-	@media (min-width: ${laptop}px) and (max-width: 2879px) {
+	@media (min-width: ${laptop}px) and (max-width: ${desktop}px) {
 		position: relative;
 		display: flex;
 		margin: auto;
@@ -57,13 +57,13 @@ const Description = styled.p`
 `;
 
 const AboutMePhoto = styled.img`
-	@media (min-width: ${desktop}px) {
+	@media (min-width: ${largeDesktop}px) {
 		height: 500px;
 		transform: rotate(90deg);
 		box-shadow: 10px -10px ${pink};
 		border-radius: 5%;
 	}
-	@media (min-width: ${laptop}px) and (max-width: 2879px) {
+	@media (min-width: ${laptop}px) and (max-width: ${desktop}px) {
 		height: 400px;
 		transform: rotate(90deg);
 		box-shadow: 10px -10px ${pink};

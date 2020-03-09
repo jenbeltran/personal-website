@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { breakpoints } from '../../theme/breakpoints';
 import { colors } from '../../theme/colors';
 
-const { tablet, laptop, desktop } = breakpoints;
+const { tablet, laptop, desktop, largeDesktop } = breakpoints;
 const { pink } = colors;
 
 const CardSection = styled.section`
@@ -34,14 +34,14 @@ const CardPhotoMin = styled.img`
 `;
 
 const CardPhotoMax = styled.img`
-	@media (min-width: ${desktop}px) {
+	@media (min-width: ${largeDesktop}px) {
 		height: 400px;
 		width: 575px;
 		position: relative;
 		display: flex;
 		margin: auto;
 	}
-	@media (min-width: ${laptop}px) and (max-width: 2879px) {
+	@media (min-width: ${laptop}px) and (max-width: ${desktop}px) {
 		height: 300px;
 		width: 475px;
 		position: relative;
