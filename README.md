@@ -16,4 +16,4 @@ Tools used: GatsbyJS, Styled Components
 
 
 
-
+Figma designed by Nasom Ikoko: https://www.figma.com/file/1sakguYVZKwwXWRArhrzli/Jen-s-Website?node-id=13%3A114
