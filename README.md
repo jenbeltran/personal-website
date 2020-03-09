@@ -8,7 +8,7 @@ This is a simple front-end website to showcase my personal accomplishments.
 Tools used: GatsbyJS, Styled Components
 
 
-<h1>
+<h3>
 To Open
 </h1>
 
