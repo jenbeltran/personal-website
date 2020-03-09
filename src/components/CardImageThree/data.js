@@ -20,7 +20,7 @@ const Projects = [
 			'Built a web application in partners that connects students and tutors for tutoring sessions. Students can send ticket requests for tutoring sessions and tutors have the option to accept it.'
 	},
 	{
-		website          : 'https://github.com/jenbeltran/tech-jam-hackathon',
+		website          : 'https://devpost.com/software/the-good-neighbor',
 		photo            : TechJam,
 		alt              : 'Tech Jam hackathon project image',
 		eventName        : 'Elevate Tech Jam - September 2019',
